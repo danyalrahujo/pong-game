@@ -1,0 +1,35 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #2a2a2a, -20px -20px 60px #141414;
+  color: #00ffcc;
+}
+
+#paddle {
+  width: 10px;
+  height: 100px;
+  background: linear-gradient(0deg, #00ffcc, #c0c0c0);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+#ball {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(45deg, #ff0099, #00ffcc);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ff0099;
+}
+
+@media (max-width: 600px) {
+  #paddle {
+    height: 50px;
+  }
+  #ball {
+    width: 10px;
+    height: 10px;
+  }
+}
