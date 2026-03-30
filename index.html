@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="scoreboard">
-        <h1>Scoreboard</h1>
-        <p>Player: <span id="player-score">0</span></p>
-        <p>Computer: <span id="computer-score">0</span></p>
+    <div class="container">
+        <h1>PONG GAME</h1>
+        <div class="scoreboard">
+            <div class="score">
+                <h2>Player</h2>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="score">
+                <h2>Computer</h2>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+        <canvas id="pongCanvas" width="800" height="400"></canvas>
+        <div class="instructions">
+            <p><strong>Controls:</strong> Use Mouse Y-position or ↑↓ Arrow Keys to move paddle</p>
+            <p><strong>Goal:</strong> Score 5 points to win!</p>
+        </div>
     </div>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
     <script src="script.js"></script>
 </body>
 </html>
