@@ -1,35 +1,78 @@
-.game {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-  border-radius: 10px;
-  box-shadow: 20px 20px 60px #2a2a2a, -20px -20px 60px #141414;
-  color: #00ffcc;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#paddle {
-  width: 10px;
-  height: 100px;
-  background: linear-gradient(0deg, #00ffcc, #c0c0c0);
-  box-shadow: 0 0 20px #00ffcc;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
 }
 
-#ball {
-  width: 15px;
-  height: 15px;
-  background: linear-gradient(45deg, #ff0099, #00ffcc);
-  border-radius: 50%;
-  box-shadow: 0 0 20px #ff0099;
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 600px) {
-  #paddle {
-    height: 50px;
-  }
-  #ball {
-    width: 10px;
-    height: 10px;
-  }
+h1 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff88;
+    font-size: 2.5em;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 40px;
+}
+
+.score {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+}
+
+.score h2 {
+    color: #00ff88;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.score p {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#pongCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #00ff88;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+.instructions {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.instructions p {
+    margin: 8px 0;
+}
+
+.instructions strong {
+    color: #00ff88;
 }
